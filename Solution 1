@@ -1,0 +1,33 @@
+Problem Statement - 
+Write the output of the following problem and explain your output:
+
+
+var fullname = 'John Doe';
+var obj = {
+   fullname: 'Colin Ihrig',
+   prop: {
+      fullname: 'Aurelio De Rosa',
+      getFullname: function() {
+         return this.fullname;
+      }
+   }
+};
+
+console.log(obj.prop.getFullname());
+
+var test = obj.prop.getFullname;
+
+console.log(test());
+
+Solution-
+output:
+       Aurelio De Rosa
+       John Doe
+ Explaination - In the "console.log(obj.prop.getFullname())" statement getFullname is invoked and returns the fullname that is currently 
+                 pointed by "this". In this case this points towards fullname of prop ie Aurelio De Rosa (function local to prop).
+                 
+                In second Output, John Doe is printed because when getfullname() is assigned to test, the parameter which "this" is pointing
+                now is global object which in this case happens to be "fullname(John Doe)".
+ 
+                That concludes the explaination.
+
