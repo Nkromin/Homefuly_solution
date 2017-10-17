@@ -1,0 +1,63 @@
+Problem Statement 2 -
+            Consider a staircase of size :
+
+                 #
+                ##
+               ###
+              ####
+              Observe that its base and height are both equal to n, and the image is drawn using # symbols and spaces. The last line is not preceded by any spaces.
+
+              Write a program that prints a staircase of size n.
+
+              Input Format
+
+               A single integer, n , denoting the size of the staircase.
+
+               Output Format
+
+               Print a staircase of size n using # symbols and spaces.
+
+               Note: The last line must have 0 spaces in it.
+
+               Sample Input
+
+               6
+
+               Sample Output
+
+                          #
+                         ##
+                        ###
+                       ####
+                      #####
+                     ######
+                     Explanation
+
+                    The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of n.
+SOLUTION -
+<html>
+<head>
+<meta name="description" content="Homefuly-task-2">
+<script type="text/javascript">
+  var i, j,n;
+  n = parseInt(prompt("enter value of n",5));
+   //outer loop
+  for(i=0;i<n;i++)
+    {
+   //inner loop
+  for(j=0;j<n;j++)
+     { if((i+j)>=(n-1))
+       document.write('#');
+       else
+       document.write('&ensp;'); 
+      }
+       document.write('<br/>');
+       }
+ </script>
+ </head>
+ <body>
+ </body>
+ </html>
+ 
+ here's a working output -
+ https://output.jsbin.com/nidijumuti
