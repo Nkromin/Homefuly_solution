@@ -29,5 +29,5 @@ output:
                 In second Output, John Doe is printed because when getfullname() is assigned to test, the parameter which "this" is pointing
                 now is global object which in this case happens to be "fullname(John Doe)".
  
-                That concludes the explaination.
+                This concludes the explaination.
 
